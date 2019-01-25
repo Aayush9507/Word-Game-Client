@@ -86,7 +86,7 @@ public class Client {
         return response;
     }
 
-    public void getHint(Short msgtype){
+    public Short getHint(Short msgtype){
         myLogger.info("Sending Hint request");
         try {
             Gethint obj  = new Gethint(msgtype, gameId);
@@ -105,9 +105,9 @@ public class Client {
         }
         catch (Exception ex) {
             myLogger.info("Exception"+ex.getLocalizedMessage());
-        }
+        }return 6;
     }
-    public void exitAck(Short msgtype){
+    public Short exitAck(Short msgtype){
         myLogger.info("Sending Exit request");
         try {
             Exit obj  = new Exit(msgtype, gameId);
@@ -127,7 +127,7 @@ public class Client {
         }
         catch (Exception ex) {
             myLogger.info("Exception"+ex.getLocalizedMessage());
-        }
+        }return 8;
     }
 
     public HashMap retrieveHeartbeat(DatagramChannel dc){

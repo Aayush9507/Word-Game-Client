@@ -4,13 +4,13 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class TestGetHint {
+public class TestExit {
     Client nc = new Client("127.0.0.1", 12001);
     @Test
-    public void TestGetHint(){
+    public void testExit(){
         try {
-            Short num = nc.getHint((short)5);
-            assertEquals("6",num.toString());
+            Short num = nc.exitAck((short)7);
+            assertEquals("8",num.toString());
         }catch (Exception e){}
     }
 }
