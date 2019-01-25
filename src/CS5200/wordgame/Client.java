@@ -18,15 +18,6 @@ public class Client {
     private HashMap response;
     public Client(){}
 
-    public void run(){
-        try {
-            Thread.sleep(4000);
-            myLogger.debug("Listening Heartbeat");
-            retrieveHeartbeat(Client.client);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
 
     public Client(String host, Integer port) {
         try {
@@ -35,8 +26,8 @@ public class Client {
         } catch (Exception ex) {}
     }
 
-    public HashMap newGame(Short msgtype, String anum, String lname, String fname, String alias){
-
+    public Short newGame(Short msgtype, String anum, String lname, String fname, String alias){
+        Short mesgid = null;
         myLogger.info("Sending New Game request");
         try {
             NewGameMessage obj  = new NewGameMessage(msgtype,anum,lname,fname,alias);
@@ -52,18 +43,21 @@ public class Client {
             response = obj.Decode(buffer);
 
             gameId = (Short) response.get("gameid");
-            msgtype = (Short) response.get("msgid");
+            mesgid = (Short) response.get("msgid");
             myLogger.info("Receiving Game definiton");
             myLogger.info("NewGame Response: MsgID = "+response.get("msgid")+" gameid = "+response.get("gameid")+" Hint = "+response.get("hint")+" Definition = "+response.get("definition"));
-//            retrieveHeartbeat(client);
+
+            //calling Heartbeat Here
+            retrieveHeartbeat(client);
 
         }
         catch (Exception ex) {
             System.out.println("Exception"+ex.getMessage());
-        }return response;
+        }return mesgid;
     }
 
-    public HashMap guess(Short msgid,String guess){
+    public Short guess(Short msgid,String guess){
+        Short msid = null;
         myLogger.info("Sending Guess request");
         try {
             Guess obj  = new Guess(msgid,gameId,guess);
@@ -79,14 +73,16 @@ public class Client {
             response = obj.Decode(buffer);
             myLogger.info("Receiving Game Response");
             myLogger.info("Guess Response: MsgID = "+response.get("msgid")+" gameid = "+response.get("gameid")+" result = "+response.get("result")+" score = "+response.get("score")+" hint = "+response.get("hint"));
+            msid = (Short) response.get("msgid");
         }
         catch (Exception ex) {
             myLogger.info("Exception"+ex.getLocalizedMessage());
         }
-        return response;
+        return msid;
     }
 
     public Short getHint(Short msgtype){
+        Short id = null;
         myLogger.info("Sending Hint request");
         try {
             Gethint obj  = new Gethint(msgtype, gameId);
@@ -102,12 +98,16 @@ public class Client {
             response = obj.Decode(buffer);
             myLogger.info("Receiving Hint");
             myLogger.info("Hint Response: Msgid = "+response.get("msgid")+" gameid = "+response.get("gameid")+" hint = "+response.get("hint"));
+
+            Short num = (Short) response.get("msgid");
+            System.out.println("dvggdgddggd "+num);
         }
         catch (Exception ex) {
             myLogger.info("Exception"+ex.getLocalizedMessage());
-        }return 6;
+        }return id ;
     }
     public Short exitAck(Short msgtype){
+        Short msggid= null;
         myLogger.info("Sending Exit request");
         try {
             Exit obj  = new Exit(msgtype, gameId);
@@ -123,11 +123,12 @@ public class Client {
             client.receive(buffer);
             buffer.flip();
             HashMap newgameresponse = obj.Decode(buffer);
+             msggid = (Short) response.get("msgid");
             myLogger.info("Exit Acknowledgement: MsgID = "+newgameresponse.get("msgid")+" gameid = "+newgameresponse.get("gameid"));
         }
         catch (Exception ex) {
             myLogger.info("Exception"+ex.getLocalizedMessage());
-        }return 8;
+        }return msggid;
     }
 
     public HashMap retrieveHeartbeat(DatagramChannel dc){
@@ -156,33 +157,6 @@ public class Client {
     public DatagramChannel getClient() {
         return client;
     }
-
-    //    Thread th = new Thread(new Runnable() {
-//        @Override
-//        public void run() {
-//            while (true){
-//        }
-//    }
-
-//    public void Error(){
-//        System.out.println("Error");
-//        try {
-//            Error obj  = new Error((short)9, gameId);
-//            ByteBuffer encodedByte = obj.Encode();
-//            InetSocketAddress serverAddress = new InetSocketAddress(IPAddress, port);
-//            client = DatagramChannel.open();
-//            client.bind(null);
-//            int bytesSending = client.send(encodedByte, serverAddress);
-//            ByteBuffer buffer = ByteBuffer.allocate(1024);
-//            client.receive(buffer);
-//            buffer.flip();
-//            HashMap newgameresponse = obj.Decode(buffer);
-//            myLogger.info("Response for Error request: "+newgameresponse.get("msgid"));
-//        }
-//        catch (Exception ex) {
-//            System.out.println("Exception"+ex.getLocalizedMessage());
-//        }
-//    }
 
 
 }

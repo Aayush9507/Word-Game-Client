@@ -14,10 +14,10 @@ public class Main {
         DatagramChannel client =  new Client("127.0.0.1",12001).getClient();
 
         obj.newGame((short)1,"A02259952","Goyal","Aayush","AG");
-        obj.retrieveHeartbeat(client);
         obj.guess((short)3,"ABCD");
         obj.getHint((short)5);
         obj.exitAck((short)7);
+        //I have called the heartbeat in newgame method in Client
 
 
 

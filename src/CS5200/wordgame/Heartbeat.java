@@ -7,6 +7,8 @@ import java.nio.ByteOrder;
 import java.util.HashMap;
 
 public class Heartbeat extends Message {
+    static Logger mylogger = Logger.getLogger(Gethint.class);
+
     private ByteArrayOutputStream outputStream;
 
 
@@ -21,6 +23,7 @@ public class Heartbeat extends Message {
             System.out.println(msgID+" "+gameID);
             res.put("msgid",msgID);
             res.put("gameid",gameID);
+            mylogger.info("Decoding Heartbeat completed");
             return res;
         }
 }

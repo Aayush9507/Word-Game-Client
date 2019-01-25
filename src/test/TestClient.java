@@ -1,6 +1,5 @@
 import CS5200.wordgame.Client;
 import org.junit.Test;
-import java.util.HashMap;
 
 import static org.junit.Assert.assertEquals;
 
@@ -12,9 +11,8 @@ public class TestClient {
     public void testnewGameEncode()
     {
         try {
-            HashMap res = nc.newGame((short) 1, "A02259952", "Goyal", "Aayush", "AG");
-            Short msgid = (Short) res.get("msgid");
-            assertEquals("2", msgid.toString());
+            Short res = nc.newGame((short) 1, "A02259952", "Goyal", "Aayush", "AG");
+            assertEquals("2", res.toString());
         } catch (Exception e) {
             e.printStackTrace();
         }
