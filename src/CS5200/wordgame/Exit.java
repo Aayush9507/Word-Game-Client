@@ -20,51 +20,34 @@ public class Exit extends Message {
 
     public Exit() {
     }
+
     public ByteBuffer Encode() throws IOException {
         outputStream = new ByteArrayOutputStream();
         Exit obj = new Exit();
-        encodeShort(msgID);
-        encodeShort(gameId);
+        Common.encodeShort(msgID,outputStream);
+        Common.encodeShort(gameId,outputStream);
         return ByteBuffer.wrap(outputStream.toByteArray());
     }
-    public HashMap Decode(ByteBuffer bytes){
+
+    public HashMap Decode(ByteBuffer bytes) {
         HashMap res = new HashMap();
         bytes.order(ByteOrder.BIG_ENDIAN);
-        if (msgID==9) {
-            Short gameID =decodeShort(bytes);
+        if (msgID == 9) {
+            Short gameID = Common.decodeShort(bytes);
             outputStream = new ByteArrayOutputStream();
-            Error obj = new Error(msgID,gameID);
+            Error obj = new Error(msgID, gameID);
             ByteBuffer buff = ByteBuffer.wrap(outputStream.toByteArray());
             res = obj.Decode(buff);
             System.out.println("Error in Exit request");
             return res;
-        }
-        else {Short msgID = decodeShort(bytes);
-            Short gameID =decodeShort(bytes);
-            System.out.println(msgID+" "+gameID);
+        } else {
+            Short msgID = Common.decodeShort(bytes);
+            Short gameID = Common.decodeShort(bytes);
+            System.out.println(msgID + " " + gameID);
             res.put("msgid", msgID);
             res.put("gameid", gameID);
-            return res;}
+            return res;
+        }
 
     }
-    void encodeShort(short value) throws IOException {
-        ByteBuffer buffer = ByteBuffer.allocate(Short.BYTES);
-        buffer.order(ByteOrder.BIG_ENDIAN);
-        buffer.putShort(value);
-        outputStream.write(buffer.array());
-    }
-
-    void encodeString(String value) throws IOException {
-        if (value==null)
-            value="";
-
-        byte[] textBytes = value.getBytes(Charset.forName("UTF-16BE"));
-        encodeShort((short) (textBytes.length));
-        outputStream.write(textBytes);
-    }
-
-    static short decodeShort(ByteBuffer bytes) {
-        return bytes.getShort();
-    }
-
-    }
+}

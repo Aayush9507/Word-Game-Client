@@ -4,7 +4,9 @@ import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.nio.charset.Charset;
+import CS5200.wordgame.Common;
 import java.util.HashMap;
+import CS5200.wordgame.Message;
 
 
 public class NewGameMessage extends Message {
@@ -26,11 +28,11 @@ public class NewGameMessage extends Message {
 
     public ByteBuffer Encode() throws IOException {
         outputStream = new ByteArrayOutputStream();
-        encodeShort(msgID);
-        encodeString(aNumber);
-        encodeString(lName);
-        encodeString(fName);
-        encodeString(alias);
+        Common.encodeShort(msgID,outputStream);
+        Common.encodeString(aNumber,outputStream);
+        Common.encodeString(lName,outputStream);
+        Common.encodeString(fName,outputStream);
+        Common.encodeString(alias,outputStream);
         return ByteBuffer.wrap(outputStream.toByteArray());
 
     }
@@ -39,7 +41,7 @@ public class NewGameMessage extends Message {
         HashMap res = new HashMap();
 
         if (msgID==9) {
-            Short gameID =decodeShort(bytes);
+            Short gameID =Common.decodeShort(bytes);
             outputStream = new ByteArrayOutputStream();
             Error obj = new Error(msgID,gameID);
             ByteBuffer buff = ByteBuffer.wrap(outputStream.toByteArray());
@@ -47,10 +49,10 @@ public class NewGameMessage extends Message {
             return res;
         }
         else {
-            Short msgID = decodeShort(bytes);
-            Short gameID =decodeShort(bytes);
-            String hint = decodeString(bytes);
-            String definition = decodeString(bytes);
+            Short msgID = Common.decodeShort(bytes);
+            Short gameID =Common.decodeShort(bytes);
+            String hint = Common.decodeString(bytes);
+            String definition = Common.decodeString(bytes);
             res.put("msgid",msgID);
             res.put("gameid",gameID);
             res.put("hint",hint);
@@ -58,33 +60,33 @@ public class NewGameMessage extends Message {
             return res;}
 
     }
-    void encodeShort(short value) throws IOException {
-        ByteBuffer buffer = ByteBuffer.allocate(Short.BYTES);
-        buffer.order(ByteOrder.BIG_ENDIAN);
-        buffer.putShort(value);
-        outputStream.write(buffer.array());
-    }
-
-    void encodeString(String value) throws IOException {
-        if (value==null)
-            value="";
-
-        byte[] textBytes = value.getBytes(Charset.forName("UTF-16BE"));
-        encodeShort((short) (textBytes.length));
-        outputStream.write(textBytes);
-    }
-
-    static short decodeShort(ByteBuffer bytes) {
-        return bytes.getShort();
-    }
-
-    static String decodeString(ByteBuffer bytes) {
-        short textLength = decodeShort(bytes);
-        if (bytes.remaining() < textLength) {
-            return null;
-        }
-        byte[] textBytes = new byte[textLength];
-        bytes.get(textBytes, 0, textLength);
-        return new String(textBytes, Charset.forName("UTF-16BE"));
-    }
+//    void encodeShort(short value) throws IOException {
+//        ByteBuffer buffer = ByteBuffer.allocate(Short.BYTES);
+//        buffer.order(ByteOrder.BIG_ENDIAN);
+//        buffer.putShort(value);
+//        outputStream.write(buffer.array());
+//    }
+//
+//    void encodeString(String value) throws IOException {
+//        if (value==null)
+//            value="";
+//
+//        byte[] textBytes = value.getBytes(Charset.forName("UTF-16BE"));
+//        encodeShort((short) (textBytes.length));
+//        outputStream.write(textBytes);
+//    }
+//
+//    static short decodeShort(ByteBuffer bytes) {
+//        return bytes.getShort();
+//    }
+//
+//    static String decodeString(ByteBuffer bytes) {
+//        short textLength = decodeShort(bytes);
+//        if (bytes.remaining() < textLength) {
+//            return null;
+//        }
+//        byte[] textBytes = new byte[textLength];
+//        bytes.get(textBytes, 0, textLength);
+//        return new String(textBytes, Charset.forName("UTF-16BE"));
+//    }
 }

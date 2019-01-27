@@ -26,5 +26,11 @@ public class Heartbeat extends Message {
             mylogger.info("Decoding Heartbeat completed");
             return res;
         }
+
+    static short decodeShort(ByteBuffer bytes) {
+        return bytes.getShort();
+    }
 }
+
+
 

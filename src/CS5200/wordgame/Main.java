@@ -17,7 +17,7 @@ public class Main {
         obj.guess((short)3,"ABCD");
         obj.getHint((short)5);
         obj.exitAck((short)7);
-        //I have called the heartbeat in newgame method in Client
+        //I have called the heartbeat in Heartbeat method in Client
 
 
 

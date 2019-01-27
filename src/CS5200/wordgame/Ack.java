@@ -20,15 +20,9 @@ public class Ack {
     public ByteBuffer Encode() throws IOException {
         outputStream = new ByteArrayOutputStream();
 //        Guess obj = new Guess();
-        encodeShort(msgID);
-        encodeShort(gameID);
+        Common.encodeShort(msgID,outputStream);
+        Common.encodeShort(gameID,outputStream);
         return ByteBuffer.wrap(outputStream.toByteArray());
     }
 
-    void encodeShort(short value) throws IOException {
-        ByteBuffer buffer = ByteBuffer.allocate(Short.BYTES);
-        buffer.order(ByteOrder.BIG_ENDIAN);
-        buffer.putShort(value);
-        outputStream.write(buffer.array());
-    }
 }
