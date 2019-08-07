@@ -2,18 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e7b08d2-73f4-4400-85f6-956c74c51903" name="Default Changelist" comment="Test case added">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Hw1/CS5200/wordgame/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hw1/CS5200/wordgame/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CS5200/wordgame/Ack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CS5200/wordgame/Ack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CS5200/wordgame/Error.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CS5200/wordgame/Error.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CS5200/wordgame/Exit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CS5200/wordgame/Exit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CS5200/wordgame/Gethint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CS5200/wordgame/Gethint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CS5200/wordgame/Guess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CS5200/wordgame/Guess.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CS5200/wordgame/Heartbeat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CS5200/wordgame/Heartbeat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CS5200/wordgame/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CS5200/wordgame/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CS5200/wordgame/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CS5200/wordgame/Message.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CS5200/wordgame/NewGameMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CS5200/wordgame/NewGameMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/TestClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/TestClient.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -73,29 +65,32 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="2089892220">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="8" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/CS5200/wordgame/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CS5200/wordgame/Gethint.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="15">
+              <caret line="1" column="23" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -103,8 +98,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CS5200/wordgame/Error.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+            <state relative-caret-position="120">
+              <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -115,8 +110,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CS5200/wordgame/Message.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+            <state relative-caret-position="105">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -131,8 +126,6 @@
               <caret line="9" selection-start-line="9" selection-end-line="9" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#742#743#0" expanded="true" />
-                <element signature="e#781#782#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -141,20 +134,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CS5200/wordgame/Exit.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CS5200/wordgame/Client.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1025">
-              <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+            <state>
+              <caret column="24" lean-forward="true" selection-start-column="24" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -165,8 +146,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CS5200/wordgame/Ack.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+            <state relative-caret-position="300">
+              <caret line="20" column="51" lean-forward="true" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -177,8 +158,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CS5200/wordgame/Guess.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6">
-              <caret line="28" column="32" lean-forward="true" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+            <state relative-caret-position="129">
+              <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -187,10 +168,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/TestHeartbeat.java">
+        <entry file="file://$PROJECT_DIR$/src/CS5200/wordgame/NewGameMessage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="120">
+              <caret line="8" column="45" lean-forward="true" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -234,14 +215,14 @@
         <option value="$PROJECT_DIR$/src/CS5200/wordgame/Client.java" />
         <option value="$PROJECT_DIR$/src/test/TestClient.java" />
         <option value="$PROJECT_DIR$/src/CS5200/wordgame/Heartbeat.java" />
-        <option value="$PROJECT_DIR$/src/CS5200/wordgame/NewGameMessage.java" />
-        <option value="$PROJECT_DIR$/src/CS5200/wordgame/Gethint.java" />
         <option value="$PROJECT_DIR$/src/CS5200/wordgame/Guess.java" />
         <option value="$PROJECT_DIR$/src/CS5200/wordgame/Exit.java" />
-        <option value="$PROJECT_DIR$/src/CS5200/wordgame/Message.java" />
         <option value="$PROJECT_DIR$/src/CS5200/wordgame/Common.java" />
         <option value="$PROJECT_DIR$/src/CS5200/wordgame/Ack.java" />
         <option value="$PROJECT_DIR$/src/CS5200/wordgame/Error.java" />
+        <option value="$PROJECT_DIR$/src/CS5200/wordgame/Gethint.java" />
+        <option value="$PROJECT_DIR$/src/CS5200/wordgame/Message.java" />
+        <option value="$PROJECT_DIR$/src/CS5200/wordgame/NewGameMessage.java" />
         <option value="$PROJECT_DIR$/src/CS5200/wordgame/Main.java" />
       </list>
     </option>
@@ -272,25 +253,19 @@
         <subPane>
           <expand>
             <path>
-              <item name="CS5200_hw1_&lt;AayushGoyal&gt;" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CS5200_hw1_&lt;AayushGoyal&gt;" type="462c0819:PsiDirectoryNode" />
+              <item name="Word-Game-Client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Word-Game-Client" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="CS5200_hw1_&lt;AayushGoyal&gt;" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CS5200_hw1_&lt;AayushGoyal&gt;" type="462c0819:PsiDirectoryNode" />
+              <item name="Word-Game-Client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Word-Game-Client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="CS5200_hw1_&lt;AayushGoyal&gt;" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CS5200_hw1_&lt;AayushGoyal&gt;" type="462c0819:PsiDirectoryNode" />
+              <item name="Word-Game-Client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Word-Game-Client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="wordgame" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CS5200_hw1_&lt;AayushGoyal&gt;" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CS5200_hw1_&lt;AayushGoyal&gt;" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -457,6 +432,7 @@
       <workItem from="1548369988661" duration="21007000" />
       <workItem from="1548399874287" duration="108000" />
       <workItem from="1548449414003" duration="2460000" />
+      <workItem from="1565210416312" duration="260000" />
     </task>
     <servers />
   </component>
@@ -493,13 +469,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79688000" />
+    <option name="totallyTimeSpent" value="79948000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" x="548" y="35" width="344" height="830" id="Project" order="0" sideWeight="0.49913645" visible="true" weight="0.24821173" />
+      <window_info active="true" content_ui="combo" x="548" y="35" width="344" height="830" id="Project" order="0" sideWeight="0.49913645" visible="true" weight="0.25178826" />
       <window_info id="Structure" order="1" sideWeight="0.50086355" side_tool="true" weight="0.15665236" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -594,7 +570,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/TestGetHint.java">
+    <entry file="file://$PROJECT_DIR$/src/test/TestGethint.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
@@ -630,36 +606,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CS5200/wordgame/NewGameMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="47" column="35" lean-forward="true" selection-start-line="47" selection-start-column="35" selection-end-line="47" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CS5200/wordgame/Gethint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/TestHeartbeat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/TestGuess.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -670,40 +616,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/CS5200/wordgame/Gethint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="55" column="4" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/TestHeartbeat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/CS5200/wordgame/Guess.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6">
-          <caret line="28" column="32" lean-forward="true" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+        <state relative-caret-position="129">
+          <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CS5200/wordgame/Exit.java">
+    <entry file="file://$PROJECT_DIR$/src/CS5200/wordgame/Error.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CS5200/wordgame/Message.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CS5200/wordgame/Ack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+        <state relative-caret-position="120">
+          <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -713,7 +659,47 @@
     <entry file="file://$PROJECT_DIR$/src/CS5200/wordgame/Client.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1025">
-          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CS5200/wordgame/Exit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="24" lean-forward="true" selection-start-column="24" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CS5200/wordgame/Ack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="51" lean-forward="true" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CS5200/wordgame/NewGameMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="45" lean-forward="true" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CS5200/wordgame/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -726,29 +712,14 @@
           <caret line="9" selection-start-line="9" selection-end-line="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#742#743#0" expanded="true" />
-            <element signature="e#781#782#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CS5200/wordgame/Error.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CS5200/wordgame/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="15">
+          <caret line="1" column="23" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="23" />
         </state>
       </provider>
     </entry>

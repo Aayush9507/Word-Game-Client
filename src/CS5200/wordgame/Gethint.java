@@ -54,7 +54,4 @@ public class Gethint extends Message {
 
     }
 
-//    static byte decodeByte(ByteBuffer bytes){
-//        return bytes.get();
-//    }
 }

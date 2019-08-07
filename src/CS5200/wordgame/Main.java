@@ -1,5 +1,7 @@
 package CS5200.wordgame;
 import org.apache.log4j.BasicConfigurator;
+import org.apache.log4j.Logger;
+
 
 import java.nio.channels.DatagramChannel;
 
