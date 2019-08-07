@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class TestGetHint {
+public class TestGethint {
     Client nc = new Client("127.0.0.1", 12001);
     @Test
     public void TestGetHint(){
